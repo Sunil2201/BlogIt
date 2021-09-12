@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ font-family: 'Noto Serif', serif;
+}
+#main::before{
+  content: "";
+  position: absolute;
+  background: url('./ryan-hafey-mSnfSWBaP_8-unsplash.jpg') no-repeat center center/cover;
+  height:100%;
+  width: 100%;
+  opacity: 1;
+  z-index: -1;
+}
+#main{
+  height: 691px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+}
+#main .heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+#main h1{
+  font-size: 4rem;
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  color:black;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  height: 20rem;
+}
+#content a{
+  text-decoration: none;
+  color: black
+}
+#content h2{
+  padding-left: 3.5rem;
+  font-size: 3rem;
+}
+/* nav & footer styles */
+nav{
+  position: sticky;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav h1{
+  color: red;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav li{
+  list-style-type: none;
+  margin-left: 20px;
+}
+nav h1{
+  font-size: 2em;
+}
+nav p, nav a{
+ font-weight: 300;
+}
+nav .site-title{
+  padding-left: 2rem;
+}
+nav ul{
+  padding-right: 2rem;
+}
+nav li a:hover{
+  color: red;
+  transition: all 0.5s ease-in;
+}
+footer{
+  color: #777;
+  text-align: center;
+  margin: 80px auto 20px;
+}
+h2{
+  margin-bottom: 40px;
+}
+h3{
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.blogsContent{
+  margin-left: 20px;
+}
+/* index styles */
+.blogsContent a{
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 6px solid crimson;
+}
+.blogsContent a:hover h3{
+  color: crimson;
+}
+/* details styles */
+.detailsContent{
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+}
+.delete{
+  border-radius: 50%;
+  padding: 8px;
+}
+.delete:hover{
+  cursor: pointer;
+  color: red;
+}
+/* create styles */
+.create-blog form{
+  max-width: 400px;
+  margin: 0 auto;
+}
+.create-blog input,
+.create-blog textarea{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+.create-blog label{
+  display: block;
+  margin-top: 24px;
+}
+textarea{
+  height: 120px;
+}
+.create-blog button{
+  margin-top: 20px;
+  background: crimson;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#about::before{
+  content: "";
+  position: absolute;
+  background: url('./andrew-neel-cckf4TsHAuw-unsplash.jpg') no-repeat center center/cover;
+  height:100%;
+  width: 100%;
+  opacity: 1;
+  z-index: -1;
+}
+#about{
+  display: flex;
+  color: white;
+  height: 640px;
+}
+#about .about-content{
+  padding-left: 35rem;
+}
+#about .about-content h1{
+font-size: 4rem
+}
+#about .about-content p{
+  font-size: 1.4rem;
+}
